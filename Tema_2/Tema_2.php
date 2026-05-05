@@ -2,8 +2,9 @@
 $edad = 20;
 if ($edad >= 18) {
     echo "Eres mayor de edad.";
+}
 
-    // 2. IF...ELSE: Ejecuta una acción u otra
+// 2. IF...ELSE: Ejecuta una acción u otra
 $hora = 14;
 if ($hora < 12) {
     echo "Buenos días.";
@@ -21,4 +22,5 @@ if ($nota >= 90) {
     echo "Reprobado";
 }
 ?>
+
 
