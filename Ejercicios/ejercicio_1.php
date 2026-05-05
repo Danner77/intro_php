@@ -1,6 +1,10 @@
 <?php
-echo "Iniciando proceso... ";
-echo "Error detectado. "; // Desactiva esta línea
-echo "Cargando base de datos... "; // Desactiva esta línea
-echo "Proceso completado con éxito";
+$minutos = 5; 
+if ($minutos <= 3) {
+    $total = 300;
+} else {
+    $total = 300 + (($minutos + 3) * 50);
+}
+echo "El total a pagar es: $" . $total;
 ?>
+

@@ -1,18 +1,13 @@
 <?php
-function esPrimo($num) {
-    if ($num < 2) return false;
-    for ($i = 2; $i <= sqrt($num); $i++) {
-        if ($num % $i == 0) return false;
-    }
-    return true;
-}
+$dias = [
+    "l" => "Lunes", "m" => "Martes", "mi" => "Miércoles",
+    "j" => "Jueves", "v" => "Viernes", "s" => "Sábado", "d" => "Domingo"
+];
 
-// Ejemplo de uso
-$numero = 17;
-if (esPrimo($numero)) {
-    echo "$numero es un número primo.";
-} else {
-    echo "$numero no es un número primo.";
+$claves = array_keys($dias); 
+
+for ($i = 0; $i < count($claves); $i++) {
+    $nombreDia = $dias[$claves[$i]];
+    echo substr($nombreDia, 0, 2) . " "; 
 }
 ?>
-

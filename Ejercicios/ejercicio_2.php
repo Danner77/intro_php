@@ -1,12 +1,10 @@
-$dia = "Lunes";
-
-switch ($dia) {
-    case "Lunes":
-        echo "Hoy es el primer día de la semana.";
-        break;
-    case "Viernes":
-        echo "Ya casi es fin de semana";
-        break;
-    default:
-        echo "Es un día normal.";
+<?php
+$numeros = []; // Creamos el array indexado
+for ($i = 1; $i <= 100; $i++) {
+    $numeros[] = $i; 
 }
+
+for ($i = 0; $i < count($numeros); $i++) {
+    echo $numeros[$i] . " ";
+}
+?>
